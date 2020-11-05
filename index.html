@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Drum Kit 2020</h1>
+<div class="main">
+  <div class="keys">
+    <div data-key="81" class="key">
+      <kbd>Q</kbd>
+      <span class="sound">Cymb-2A</span>
+    </div>
+    <div data-key="87" class="key">
+      <kbd>W</kbd>
+      <span class="sound">Cymb-A</span>
+    </div>
+    <div data-key="69" class="key">
+      <kbd>E</kbd>
+      <span class="sound">Cymb-C</span>
+    </div>
+    <div data-key="82" class="key">
+      <kbd>R</kbd>
+      <span class="sound">Crash</span>
+    </div>
+    <div data-key="84" class="key">
+      <kbd>T</kbd>
+      <span class="sound">Hi-Hat-A1</span>
+    </div>
+    <div data-key="89" class="key">
+      <kbd>Y</kbd>
+      <span class="sound">Hi-Hat-A1</span>
+    </div>
+    <div data-key="85" class="key">
+      <kbd>U</kbd>
+      <span class="sound">Tom-6A</span>
+    </div>
+    <div data-key="73" class="key">
+      <kbd>I</kbd>
+      <span class="sound">Tom-7B</span>
+    </div>
+    <div data-key="79" class="key">
+      <kbd>O</kbd>
+      <span class="sound">Cymb-Cres</span>
+    </div>
+    <div data-key="80" class="key">
+      <kbd>P</kbd>
+      <span class="sound">Cymb-Spl</span>
+    </div>
+  </div>
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+   </div>
+
+   <div class="keys">
+    <div data-key="90" class="key">
+      <kbd>Z</kbd>
+      <span class="sound">Bass-2A</span>
+    </div>
+    <div data-key="88" class="key">
+      <kbd>X</kbd>
+      <span class="sound">Bass-3A</span>
+    </div>
+    <div data-key="67" class="key">
+      <kbd>C</kbd>
+      <span class="sound">Bass-4A</span>
+    </div>
+    <div data-key="86" class="key">
+      <kbd>V</kbd>
+      <span class="sound">Drum G</span>
+    </div>
+    <div data-key="66" class="key">
+      <kbd>B</kbd>
+      <span class="sound">Drum A</span>
+    </div>
+    <div data-key="78" class="key">
+      <kbd>N</kbd>
+      <span class="sound">Drum B</span>
+    </div>
+    <div data-key="77" class="key">
+      <kbd>M</kbd>
+      <span class="sound">Drum F</span>
+    </div>
+   </div>
+   
+  </div>
+  
+
+  <audio data-key="65" src="clap.wav"></audio>
+  <audio data-key="83" src="hihat.wav"></audio>
+  <audio data-key="68" src="kick.wav"></audio>
+  <audio data-key="70" src="openhat.wav"></audio>
+  <audio data-key="71" src="boom.wav"></audio>
+  <audio data-key="72" src="ride.wav"></audio>
+  <audio data-key="74" src="snare.wav"></audio>
+  <audio data-key="75" src="tom.wav"></audio>
+  <audio data-key="76" src="tink.wav"></audio>
+  <audio data-key="90" src="Bass-Drum-Hit-Level-2a-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="88" src="Bass-Drum-Hit-Level-3a-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="67" src="Bass-Drum-Hit-Level-4a-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="86" src="Drum-Sticks-Hit-G-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="66" src="Drum-Sticks-Hit-A-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="78" src="Drum-Sticks-Hit-B-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="77" src="Drum-Sticks-Hit-F-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="81" src="China-Cymbal-Crash-Level-2A-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="87" src="China-Cymbal-Slide-Scrape-A-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="69" src="China-Cymbal-Slide-Scrape-C-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="82" src="Crash-Cymbal-Crescendo-Wash-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="84" src="sounds/Hi-Hat-Foot-Pedal-Close-A-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="89" src="Hi-Hat-Open-Hit-A1-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="85" src="Medium-Tom-Drum-Hit-Level-6A-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="73" src="Medium-Tom-Drum-Hit-Level-7B-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="79" src="Trash-China-Cymbal-Crescendo-Wash-www.fesliyanstudios.com.mp3"></audio>
+  <audio data-key="80" src="Splash-Cymbal-Hit-C-www.fesliyanstudios.com.mp3"></audio>
+
+<script>
+  function removeTransition(e) {
+    if (e.propertyName !== 'transform') return;
+    e.target.classList.remove('playing');
+  }
+
+  function playSound(e) {
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+    if (!audio) return;
+
+    key.classList.add('playing');
+    audio.currentTime = 0;
+    audio.play();
+  }
+
+  const keys = Array.from(document.querySelectorAll('.key'));
+  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+  window.addEventListener('keydown', playSound);
+</script>
+
+
+</body>
+</html>
