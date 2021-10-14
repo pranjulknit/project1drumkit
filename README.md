@@ -1,7 +1,7 @@
 # project1drumkit
 
 
-Drum Kit 2020 using html,css,js/
+Drum Kit 2020 using html,css/
 
 press on key it play sound of relative drum voice.
 
